@@ -8,7 +8,7 @@ defmodule Ongeza.Application do
   def start(_type, _args) do
     children = [
       # Starts a worker by calling: Ongeza.Worker.start_link(arg)
-      # {Ongeza.Worker, arg}
+      {Ongeza.Boundary.Server, "42"}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
