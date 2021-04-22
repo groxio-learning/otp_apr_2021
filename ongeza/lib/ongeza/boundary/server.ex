@@ -3,6 +3,7 @@ defmodule Ongeza.Boundary.Server do
   alias Ongeza.Core.Counter
 
   def init(count) do
+    IO.inspect("starting")
     {:ok, Counter.new(count)}
   end
 
@@ -32,14 +33,9 @@ defmodule Ongeza.Boundary.Server do
   end
 
   def start_link(state, opts \\ [name: __MODULE__]) do
-    GenServer.start(__MODULE__, state, opts)
+    GenServer.start_link(__MODULE__, state, opts)
   end
 
-  def child_spec(state) do
-    %{
-      id: Ongeza,
-      start: {__MODULE__, :start_link, [state]}}
-  end
 
 
 end
