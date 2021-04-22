@@ -1,7 +1,7 @@
 defmodule Retain.FlashCard do
   defstruct [:plan, :text]
 
-  @reject [" ", "?", "!", ".", "-"]
+  @reject [" ", "?", "!", ".", "-", ",", "\n"]
 
   def new(text \\ "hello", steps \\ 2) do
     %__MODULE__{

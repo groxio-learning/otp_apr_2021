@@ -9,7 +9,7 @@ defmodule Retain.Application do
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: Retain.Worker.start_link(arg)
-      # {Retain.Worker, arg}
+      {Retain, {"Hello", 5}}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
