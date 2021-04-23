@@ -23,6 +23,13 @@ defmodule Retain.Library do
     }
   end
 
+  def card("moe") do
+    %{
+      text: """
+            What runs but never walks, what has a mouth but never talks
+            """,
+      steps: 4
+
   def card("cristine") do
     %{
       text: "Faça coisas divertidas com abelhas operárias barulhentas!",
