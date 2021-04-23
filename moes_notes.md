@@ -1,4 +1,4 @@
-04/21/2021 - Notes for OTP
+==========================04/21/2021 - Notes for OTP==========================
 
 -fn(acc + x) is the same as &(&2 + &1)
 
@@ -24,7 +24,7 @@ state(counter) -> return the number (42)
 
 
 
-04/22/2021 - Notes for OTP
+===========================04/22/2021 - Notes for OTP========================
 
 - GenServer.whereis Server
 - GenServer.whereis "name inside of application.ex"
@@ -77,3 +77,26 @@ Elixir will always pick an accumulator from your list.
 init = Retain.new
 handle_cast = the reducer
 handle_call = the txt
+
+
+=========================04/23/2021 Notes for OTP Class========================
+
+-Maps on the boundary
+-Structs on the core
+
+:observer.start()  <--- inside of iex -S mix , this will open up a window for viewing the supervisor and children currently running
+
+is there a way to have the genserver restart and keep almost all the lost data instead of just reverting to the last save point?
+"hydration, inside your application you can set your own rules for the application or children" - bruce
+
+You can have more than 1 application file to spider web out for setting up dependencies and then using rest_for_one strategy for the supervisor restart.
+
+Inside of the mix.exs is where we put the additional applications.
+
+
+spawn_link fn -> raise "boom" end
+(this will supervise the iex and restart)
+
+#books to get#
+designing elixir systems with otp
+elixir in action
