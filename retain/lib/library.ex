@@ -14,6 +14,15 @@ defmodule Retain.Library do
     }
   end
 
+  def card("zaki") do
+    %{
+      text: """
+            software is eating the world but AI will eat software
+            """,
+      steps: 3
+    }
+  end
+
   def card("cristine") do
     %{
       text: "Faça coisas divertidas com abelhas operárias barulhentas!",
