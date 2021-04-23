@@ -24,7 +24,7 @@ defmodule Retain.Library do
     %{
       text: """
             What runs but never walks, what has a mouth but never talks
-            """
+            """,
       steps: 4
 
   def card("cristine") do
