@@ -6,17 +6,11 @@ defmodule Retain.Library do
   def card("bruce") do
     %{
       text: """
-            We the People of the United States,
-            in Order to form a more perfect Union,
-            establish Justice, insure domestic Tranquility,
-            provide for the common defence,
-            promote the general Welfare,
-            and secure the Blessings of Liberty
-            to ourselves and our Posterity,
-            do ordain and establish this Constitution
-            for the United States of America.
+            Tomorrow, and tomorrow, and tomorrow,
+            Creeps in this petty pace from day to day,
+            To the last syllable of recorded time
             """,
-      steps: 8
+      steps: 6
     }
   end
 
