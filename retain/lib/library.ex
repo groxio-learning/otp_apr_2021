@@ -6,10 +6,10 @@ defmodule Retain.Library do
   def card("bruce") do
     %{
       text: """
-            Tomorrow, and tomorrow, and tomorrow,
-            Creeps in this petty pace from day to day,
-            To the last syllable of recorded time
-            """,
+      Tomorrow, and tomorrow, and tomorrow,
+      Creeps in this petty pace from day to day,
+      To the last syllable of recorded time
+      """,
       steps: 6
     }
   end
@@ -17,8 +17,8 @@ defmodule Retain.Library do
   def card("zaki") do
     %{
       text: """
-            software is eating the world but AI will eat software
-            """,
+      software is eating the world but AI will eat software
+      """,
       steps: 3
     }
   end
@@ -26,9 +26,11 @@ defmodule Retain.Library do
   def card("moe") do
     %{
       text: """
-            What runs but never walks, what has a mouth but never talks
-            """,
+      What runs but never walks, what has a mouth but never talks
+      """,
       steps: 4
+    }
+  end
 
   def card("cristine") do
     %{
@@ -37,4 +39,12 @@ defmodule Retain.Library do
     }
   end
 
+  def card("tracey") do
+    %{
+      text: """
+      fanya vitu vya kufurahisha na nyuki wakubwa wenye kazi kubwa
+      """,
+      steps: 4
+    }
+  end
 end
