@@ -4,7 +4,11 @@ defmodule Retain.Application do
 
   def start(_type, _args) do
     children = [
-      {Retain, {"Hello", 5}}
+      {Retain, :zaki},
+      {Retain, :tracey},
+      {Retain, :moe},
+      {Retain, :bruce},
+      {Retain, :cristine}
     ]
 
     opts = [strategy: :one_for_one, name: Retain.Supervisor]
